@@ -1,0 +1,48 @@
+{
+  "name": "infinity-crm-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/sequelize": "^4.28.9",
+    "all": "0.0.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.9",
+    "express-validator": "^6.6.0",
+    "fast-two-sms": "^3.0.0",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "nodemailer": "^6.4.17",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^6.3.5",
+    "twilio": "^3.55.1"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aravindhraj/infinity-crm-api-master.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aravindhraj/infinity-crm-api-master/issues"
+  },
+  "homepage": "https://github.com/Aravindhraj/infinity-crm-api-master#readme"
+}
