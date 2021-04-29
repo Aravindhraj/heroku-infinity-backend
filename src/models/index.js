@@ -11,6 +11,9 @@ const sequelize = new Sequelize(
     host: process.env.NODE_DB_HOST,
     port: process.env.NODE_DB_PORT,
     dialect: process.env.NODE_DB_DIALECT,
+    "dialectOptions": {
+      "ssl": true
+    }
   }
 );
 
