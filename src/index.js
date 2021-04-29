@@ -13,7 +13,7 @@ var fileupload = require("express-fileupload");
 
 dotenv.config();
 
-const port = 3005//process.env.SERVER_PORT;
+const port = process.env.PORT || 3005;
 global.__basedir = __dirname;
 const app = express();
 app.use(cors());
