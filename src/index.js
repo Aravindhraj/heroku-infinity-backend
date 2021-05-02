@@ -59,7 +59,7 @@ async function init() {
   await assertDatabaseConnectionOk();
 
   // create table based on model
-   db.sequelize.sync();
+   //db.sequelize.sync();
 
   console.log(`Starting  on port ${port}...`);
 

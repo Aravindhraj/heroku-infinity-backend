@@ -104,7 +104,7 @@ exports.getSubCategoriesOptions = async (req, res) => {
       },
       where: {
         status: {
-          [Op.eq]: 1,
+          [Op.in]: ['1','t'],
         },
       },
     });

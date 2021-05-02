@@ -114,7 +114,7 @@ exports.getActiveFinances = async (req, res) => {
       attributes: ["id", "name", "provider", "status"],
       where: {
         status: {
-          [Op.eq]: 1
+          [Op.in]: ['1','t'],
         }
       }
     });

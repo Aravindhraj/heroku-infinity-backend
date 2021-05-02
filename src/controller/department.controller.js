@@ -20,19 +20,19 @@ exports.validate = (method) => {
 exports.getDepartments = async (req, res) => {
   try {
     const departments = await db.Department.findAll({
-      attributes: [
-        [Sequelize.fn("COUNT", Sequelize.col("users.id")), "count"],
-        "id",
-        "name",
-        "status",
-      ],
-      include: [
-        {
-          model: db.User,
-          as: "users",
-          attributes: [],
-        },
-      ],
+      // attributes: [
+      //   [Sequelize.fn("COUNT", Sequelize.col("users.id")), "count"],
+      //   "id",
+      //   "name",
+      //   "status",
+      // ],
+      // include: [
+      //   {
+      //     model: db.User,
+      //     as: "users",
+      //     attributes: [],
+      //   },
+      // ],
       group: ["id"],
     });
     return apiSuccess(res, departments);
@@ -47,7 +47,7 @@ exports.getActiveDepartments = async (req, res) => {
       attributes: ["id", "name"],
       where: {
         status: {
-          [Op.eq]: 1,
+          [Op.in]: ['1','t'],
         },
       },
     });

@@ -53,7 +53,7 @@ exports.getAccessoriesOptions = async (req, res) => {
       attributes: ["id", "name", "price"],
       where: {
         status: {
-          [Op.eq]: 1,
+          [Op.in]: ['1','t'],
         },
       },
     });

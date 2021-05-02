@@ -77,7 +77,7 @@ exports.fetchActiveProducts = async (req, res) => {
     const products = await db.Products.findAll({
       where: {
         status: {
-          [Op.ne]: 0,
+          [Op.in]: ['1','t'],
         },
       },
       attributes: [

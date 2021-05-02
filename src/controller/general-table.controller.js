@@ -34,7 +34,7 @@ exports.getOptions = async (req, res, model) => {
       attributes: ["id", "name"],
       where: {
         status: {
-          [Op.eq]: 1,
+          [Op.in]: ['1','t'],
         },
       },
     });
